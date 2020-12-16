@@ -7,11 +7,15 @@ import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { StartComponent } from './start/start.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
+ 
+
+
 @NgModule({
     imports:[
-        CommonModule
+        CommonModule  
     ],
     declarations:[
+        
         HomeComponent,
         AboutComponent,
         ContactComponent,
@@ -24,7 +28,8 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
         AboutComponent,
         ContactComponent,
         FeedbackComponent,
-        StartComponent
+        StartComponent,
+      
     ]
 })
 export class PagesModule{
