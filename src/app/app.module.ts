@@ -3,25 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { FeedbackComponent } from './pages/feedback/feedback.component';
-import { StartComponent } from './pages/start/start.component';
+
 import { appRoutes } from './app.routing';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    ContactComponent,
-    FeedbackComponent,
-    StartComponent,
-  
+    
   ],
   imports: [
-    BrowserModule,  appRoutes,
+    BrowserModule,  
+    PagesModule,
+    appRoutes,
     NoopAnimationsModule
   ],
   providers: [],
