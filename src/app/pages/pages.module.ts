@@ -11,6 +11,7 @@ import { RestaurantService } from "../service/restaurant.service";
 import { LoadingComponent } from '../components/loading/loading.component';
 import { SkeletonComponent } from '../components/skeleton/skeleton.component';
 import { RestaurantsComponent } from '../components/restaurants/restaurants.component';
+import { SearchPipe } from "../pipes/search.pipe";
 
 
 
@@ -21,6 +22,7 @@ import { RestaurantsComponent } from '../components/restaurants/restaurants.comp
     declarations:[
         SkeletonComponent,
         RestaurantsComponent,
+        SearchPipe,
         LoadingComponent,  
         HomeComponent,
         AboutComponent,
@@ -35,6 +37,7 @@ import { RestaurantsComponent } from '../components/restaurants/restaurants.comp
     exports: [
         SkeletonComponent,
         RestaurantsComponent,
+        SearchPipe,
         LoadingComponent,  
         HomeComponent,
         AboutComponent,

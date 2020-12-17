@@ -23,7 +23,7 @@
 
     <section class="container__cards">
         
-        <article class="card animate" *ngFor="let card of items|slice:0:8">
+        <article class="card animate" *ngFor="let card of items|slice:0:limitCard| search:items:valueSearch">
             <div class="container__image">
                 <img src="../../../assets/images/{{card.image}}" [alt]="card.name">
             </div>
@@ -51,7 +51,7 @@
 
 
 
-    <div class="changeMore">
-        <button class="btn__charge">Cargar más</button>
+    <div class="changeMore"  >
+        <button class="btn__charge" (click)="moreItem()">Cargar más</button>
     </div>
 </div>
