@@ -1,0 +1,36 @@
+
+
+.banner__food{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    box-shadow: 1px 1px 8px #ccc; 
+    padding: 30px 0;
+    height: 280px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.title__banner{
+    color: #555;
+    font-family:arial;
+    text-align: center;
+}
+.container__start{
+    margin-top: 10px;
+    padding:10px;
+    text-align:center;
+
+}
+
+.container__start button{
+    padding:12px 0;
+    border-radius:5px;
+    font-family: sans-serif;
+    color:white;
+    font-weight: 550;
+    cursor: pointer;
+    width: 315px;
+    border:none;
+    background-color: rgb(24, 158, 24);
+}

@@ -1,1 +1,17 @@
-<p>start works!</p>
+
+<section class="banner__food animate">
+    <h1 class="title__banner">Restaurants visor</h1>
+    <img src="../../../assets/dish.svg" alt="food">
+    
+</section>
+
+
+<section class="container__start animate">
+   
+    <button *ngIf="!isLoading" (click)="home()">
+        Comenzar
+        <span class="fas fa-arrow-right"></span>
+    </button>
+    <app-loading *ngIf="isLoading"></app-loading>
+
+</section>
