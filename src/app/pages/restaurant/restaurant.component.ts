@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router} from '@angular/router'
+import { timer } from 'rxjs';
 import { RestaurantService } from 'src/app/service/restaurant.service';
 @Component({
   selector: 'app-restaurant',
   templateUrl: './restaurant.component.html',
   styleUrls: ['./restaurant.component.css']
 })
-export class RestaurantComponent  {
+export class RestaurantComponent implements OnInit {
   
   public item:{};
   
@@ -15,6 +16,22 @@ export class RestaurantComponent  {
     private router:Router,private param:ActivatedRoute) { 
     
     this.extractParam();
+
+  }
+  ngOnInit():void{
+    
+    if(!this.item){
+      this.ifReloadNavigator();
+    }
+
+  }
+
+  private ifReloadNavigator(){
+    this.service.chargeRestaurant();
+    timer(2050).subscribe(()=>{
+      this.item=this.service.allRestaurant;
+      this.extractParam();
+    })
 
   }
 
