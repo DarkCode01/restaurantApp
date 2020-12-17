@@ -1,50 +1,78 @@
-{{
-    item | json
-}}
-
-<section class="container__item animate">
-    <article class="item__image">
-        <img src="../../../assets/images/{{item.image}}" [alt]="item.name">
-    </article>
-
-</section>
-
-
-<div class="container__details animate">
-
-    <section class="container__item">
+<div *ngIf="item">
     
-        <article class="container__detail">
-            <h4>Detalles</h4>
-            
-            <br>
-
-            <strong>Rango de precio</strong>
-            <p>{{ item.price}}</p>
-            
-            <br>
-
-            <strong>Comidas</strong>
-            <p>{{ item.detail}}</p>
-        </article>
-    </section>
-
-
-    <section class="container__item">
+    <!-- title -->
+    <section>
+        <h1 class="title__item"> {{ item.name }}</h1>
+        <div class="container__title__card" >
         
-        <article class="container__detail">
-            <h4>Ubicación y contacto</h4>
-            
-            <br>
-
-            <strong>Localidad</strong>
-            <p>{{ item.location}}</p>
-            
-            <br>
-
-            <strong>Contacto</strong>
-            <p>{{ item.phone}}</p>
-        </article>
+            <div class="ratings__groups">
+                <p>
+                    <span class="fas fa-star span"></span>
+                    <span class="fas fa-star span"></span>
+                    <span class="fas fa-star span"></span>
+                    <span class="fas fa-star span"></span>
+                    <span class="fas fa-star span"></span>
+                    <i>{{' ' + item.rating }}</i>  rating
+                </p>
+            <p class="card__title">
+                {{ item.comment }} Opiniones <span class="fas fa-comments"></span>
+            </p>
+            </div>   
+        </div>
     </section>
 
+
+    <!-- image -->
+    <section class="container__item animate">
+        <article class="item__image">
+            <img src="../../../assets/images/{{item.image}}" [alt]="item.name">
+        </article>
+
+    </section>
+
+
+    <!-- details -->
+
+    <div class="container__details animate">
+
+        <section class="container__item">
+        
+            <article class="container__detail">
+                <h4>Detalles</h4>
+                
+                <br>
+
+                <strong><span class="fas fa-dollar-sign"></span> Rango de precio</strong>
+                <p>{{ item.price}}</p>
+                
+                <br>
+
+                <strong ><span class="fas fa-utensils"></span> Comidas</strong>
+                <p>{{ item.detail}}</p>
+            </article>
+        </section>
+        
+
+        <section class="container__item">
+            
+            <article class="container__detail">
+                <h4>Ubicación y contacto</h4>
+                
+                <br>
+
+                <strong><span class="fas fa-map-marker-alt"></span> Localidad</strong>
+                <p>{{ item.location}}</p>
+                
+                <br>
+
+                <strong><span class="fas fa-phone-alt"></span> Contacto</strong>
+                <p>{{ item.phone}}</p>
+            </article>
+        </section>
+
+    </div>
+
+    <div class="container__button">
+        <button class="btn__back" (click)="back()">Ver todos los restaurantes</button>
+    </div>
 </div>

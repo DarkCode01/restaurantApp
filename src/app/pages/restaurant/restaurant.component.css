@@ -10,6 +10,20 @@
     height: 400px;
     width: 600px;
 }
+.title__item{
+    margin-top:20px;
+    text-align: center;
+    color:#333;
+    font-weight: 550;
+    font-size:22px;
+    font-family:monospace;
+}
+.ratings__groups{
+    margin-right: 10px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .item__image img{
     border-radius:7px;
     width: 100%;
@@ -26,4 +40,41 @@
     padding:10px;
     margin: 10px 5px; 
     width:270px;
+}
+
+.container__title__card{
+    text-align: start;
+    margin-left: 10px;
+}
+.btn__back{
+    background-color: rgb(255, 255, 255);
+    color:#222;
+    padding:7px;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 40px;
+    box-shadow: -1.5px 0px 8px #888;
+    width:315px;
+    font-size:16px;
+    height: 30px;
+    font-weight: 550;
+    font-family: sans-serif;
+    margin:20px;
+}
+
+.container__button{
+    text-align:center;
+}
+
+
+.fa-star{
+    width:10px;
+    height: 10px;
+    color: rgba(188, 253, 84, 0.863);
+}
+.card__title{
+    font-family: sans-serif;
+    font-size: 15px;
+    color:#444;
 }

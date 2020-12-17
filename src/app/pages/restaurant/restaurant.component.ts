@@ -31,5 +31,9 @@ export class RestaurantComponent  {
     
     })
   }
+
+  public back() :void{
+    this.router.navigate(['/home'])
+  }
  
 }
