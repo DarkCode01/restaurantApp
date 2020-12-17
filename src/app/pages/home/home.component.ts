@@ -7,7 +7,8 @@ import { RestaurantService } from 'src/app/service/restaurant.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private items:any[] = [];
+  public items:any[] = [];
+
 
   constructor(private ServiceRestaurant:RestaurantService) {}
 

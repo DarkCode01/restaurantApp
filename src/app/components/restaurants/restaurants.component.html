@@ -1,0 +1,36 @@
+
+
+<section class="banner__search animate">
+   
+    <article class="container__input ">
+ 
+        <input type="search" #searchvalue (keyup)="valueSearch=searchvalue.value" class="input__search animate" placeholder="Encuentra tu restaurante favorito">
+    </article>
+</section>
+
+<br>
+<br>
+
+<div *ngIf="items.length">
+    <h1 class="animate">Los mejores restaurante en la Republica Dominicana</h1>
+
+    <section class="container__cards">
+        
+        <article class="card animate" *ngFor="let card of items|slice:0:8">
+            <div class="container__image">
+                <img src="../../../assets/images/{{card.image}}" [alt]="card.name">
+            </div>
+
+            <div class="container__title__card">
+                <h1>{{ card.name }}</h1>
+            </div>
+        </article>
+
+    </section>
+
+
+
+    <div>
+        <button mat-button>Cargar más</button>
+    </div>
+</div>

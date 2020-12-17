@@ -9,6 +9,8 @@ import { StartComponent } from './start/start.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantService } from "../service/restaurant.service";
 import { LoadingComponent } from '../components/loading/loading.component';
+import { SkeletonComponent } from '../components/skeleton/skeleton.component';
+import { RestaurantsComponent } from '../components/restaurants/restaurants.component';
 
 
 
@@ -17,7 +19,8 @@ import { LoadingComponent } from '../components/loading/loading.component';
         CommonModule  
     ],
     declarations:[
-        
+        SkeletonComponent,
+        RestaurantsComponent,
         LoadingComponent,  
         HomeComponent,
         AboutComponent,
@@ -31,6 +34,8 @@ import { LoadingComponent } from '../components/loading/loading.component';
     ],
     exports: [
         LoadingComponent,
+        RestaurantsComponent,
+        SkeletonComponent,
         HomeComponent,
         AboutComponent,
         ContactComponent,
@@ -41,5 +46,6 @@ import { LoadingComponent } from '../components/loading/loading.component';
 })
 export class PagesModule{
 
+    constructor(){}
     
 } 

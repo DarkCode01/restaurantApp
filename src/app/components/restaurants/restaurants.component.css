@@ -1,0 +1,64 @@
+
+.container__cards{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.card{
+    text-align: center;
+    width: 300px;
+    border-radius: 7px;
+    height: 220px;
+    margin:15px;
+    cursor:pointer;
+}
+.card:hover{
+    transform:scale(1.1);
+    transition: .5s;
+}
+.container__image img{
+    width: 280px;
+    height: 170px;
+    border-radius: 7px;
+}
+ 
+/* search */
+
+.banner__search{
+    display:flex;
+    /* margin-top:-5px; */
+    padding-top: 30px;
+    justify-content:center;
+    box-shadow: 1.5px 1.5px 10px #555;
+    height: 180px;
+    /* filter:opacity(.7); */
+    background-image: url('../../../assets/fish.png');
+    background-position: center;
+    
+    border-bottom-right-radius: 8px; 
+    border-bottom-left-radius: 8px; 
+    /* background-color: rgb(207, 84, 84); */
+}
+
+
+/* .title__search{
+    font-family: monospace;
+    font-size:20px;
+    text-align: center;
+    font-weight: 550;
+    color:#333333;
+    box-shadow: 1px 1px 10px #ddd;
+   
+} */
+.input__search{
+    width: 850px;
+    text-align: center;
+    font-size:16px;
+    margin-right: 5px;
+    border-radius: 8px;
+    border:none;
+    height:50px;
+}
+
+

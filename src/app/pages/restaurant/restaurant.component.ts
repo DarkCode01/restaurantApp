@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./restaurant.component.css']
 })
 export class RestaurantComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
+     
   }
 
 }
