@@ -1,1 +1,50 @@
-<p>restaurant works!</p>
+{{
+    item | json
+}}
+
+<section class="container__item animate">
+    <article class="item__image">
+        <img src="../../../assets/images/{{item.image}}" [alt]="item.name">
+    </article>
+
+</section>
+
+
+<div class="container__details animate">
+
+    <section class="container__item">
+    
+        <article class="container__detail">
+            <h4>Detalles</h4>
+            
+            <br>
+
+            <strong>Rango de precio</strong>
+            <p>{{ item.price}}</p>
+            
+            <br>
+
+            <strong>Comidas</strong>
+            <p>{{ item.detail}}</p>
+        </article>
+    </section>
+
+
+    <section class="container__item">
+        
+        <article class="container__detail">
+            <h4>Ubicación y contacto</h4>
+            
+            <br>
+
+            <strong>Localidad</strong>
+            <p>{{ item.location}}</p>
+            
+            <br>
+
+            <strong>Contacto</strong>
+            <p>{{ item.phone}}</p>
+        </article>
+    </section>
+
+</div>

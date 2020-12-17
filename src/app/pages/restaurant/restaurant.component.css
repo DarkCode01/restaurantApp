@@ -1,0 +1,29 @@
+.container__item{
+    display:flex;
+ 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.item__image {
+    height: 400px;
+    width: 600px;
+}
+.item__image img{
+    border-radius:7px;
+    width: 100%;
+    height: inherit;
+}
+.container__details{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container__detail{
+    border:1px solid #eee;
+    border-radius:5px;
+    padding:10px;
+    margin: 10px 5px; 
+    width:270px;
+}

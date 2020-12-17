@@ -8,7 +8,7 @@ export class RestaurantService{
     public allRestaurant: any[] = [];
 
     constructor(){
-        console.log("service run!!")
+        
         this.chargeRestaurant();
          
     }
