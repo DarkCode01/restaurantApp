@@ -8,7 +8,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { StartComponent } from './start/start.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantService } from "../service/restaurant.service";
- 
+import { LoadingComponent } from '../components/loading/loading.component';
+
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RestaurantService } from "../service/restaurant.service";
     ],
     declarations:[
         
+        LoadingComponent,  
         HomeComponent,
         AboutComponent,
         ContactComponent,
@@ -28,6 +30,7 @@ import { RestaurantService } from "../service/restaurant.service";
         RestaurantService
     ],
     exports: [
+        LoadingComponent,
         HomeComponent,
         AboutComponent,
         ContactComponent,

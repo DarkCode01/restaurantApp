@@ -2,3 +2,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.animate{
+    animation: animates .5s linear;
+    transition:.5s;
+}
+@keyframes animates{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

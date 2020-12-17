@@ -1,0 +1,32 @@
+/* spinner */
+
+.spinner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__spinner{
+    height: 100px;
+    padding:20px;
+    width: 100px;
+    text-align:center;
+}
+.rotate{
+    animation: rotates 1s infinite linear;
+    transition:.5s;
+    font-size:25px;
+}
+@keyframes rotates{
+    from{
+        transform: rotate(-360deg);
+    }
+    20%{
+        color: rebeccapurple;
+    }
+    40%{
+        color: orange;
+    }
+    80%{
+        color: blue;
+    }
+}
