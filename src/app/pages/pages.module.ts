@@ -12,17 +12,16 @@ import { LoadingComponent } from '../components/loading/loading.component';
 import { SkeletonComponent } from '../components/skeleton/skeleton.component';
 import { RestaurantsComponent } from '../components/restaurants/restaurants.component';
 import { SearchPipe } from "../pipes/search.pipe";
- 
+
 
 
 
 @NgModule({
     imports:[
- 
         CommonModule  
     ],
     declarations:[
-
+        
         SkeletonComponent,
         RestaurantsComponent,
         SearchPipe,
