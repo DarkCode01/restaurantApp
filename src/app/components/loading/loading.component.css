@@ -15,18 +15,11 @@
     animation: rotates 1s infinite linear;
     transition:.5s;
     font-size:25px;
+    color:green;
 }
 @keyframes rotates{
     from{
         transform: rotate(-360deg);
     }
-    20%{
-        color: rebeccapurple;
-    }
-    40%{
-        color: orange;
-    }
-    80%{
-        color: blue;
-    }
+     
 }

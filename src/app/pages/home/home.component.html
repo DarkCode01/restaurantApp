@@ -1,10 +1,8 @@
 
  <app-restaurants [items]="items"></app-restaurants>
 
- <app-loading *ngIf="!items.length"></app-loading>
+ <!-- <app-loading *ngIf="!items.length"></app-loading> -->
 
 
-
-<!-- 
-
-<app-skeleton></app-skeleton> -->
+<app-skeleton *ngIf="!items.length"></app-skeleton>
+ 

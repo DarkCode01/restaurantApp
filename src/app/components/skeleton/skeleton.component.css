@@ -1,0 +1,41 @@
+.container__skeleton{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skeleton{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    margin:20px;
+    animation: opacitys 1s infinite linear;
+ 
+}
+@keyframes opacitys{
+    from{
+        opacity:.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.skeleton__image{
+    background-color: rgb(238, 230, 230);
+    height: 160px;
+    width: 300px;
+    border-radius: 5px;
+}
+.skeleton__title{
+    width: 200px;
+    height:10px;
+    margin-top:10px;
+    background-color: rgb(238, 230, 230);
+    border-radius: 6px;
+}
+.skeleton__rating{
+    width: 120px;
+    height:10px;
+    margin-top:-5px;
+    background-color: rgb(238, 230, 230);
+    border-radius: 6px;
+}
