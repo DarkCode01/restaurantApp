@@ -23,7 +23,7 @@
 
     <section class="container__cards">
         
-        <article class="card animate" *ngFor="let card of items|slice:0:limitCard| search:items:valueSearch">
+        <article class="card animate" *ngFor="let card of items|slice:0:limitCard| search:items:valueSearch" (click)="open(card.id)">
             <div class="container__image">
                 <img src="../../../assets/images/{{card.image}}" [alt]="card.name">
             </div>

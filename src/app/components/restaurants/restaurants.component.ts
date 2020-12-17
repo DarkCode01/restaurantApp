@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-restaurants',
@@ -12,7 +13,7 @@ export class RestaurantsComponent implements OnInit {
 
   public valueSearch:string = '';
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit(): void {
    
@@ -21,5 +22,7 @@ export class RestaurantsComponent implements OnInit {
     this.limitCard+=10;
   
   }
-
+  public open(id:string){
+    this.router.navigate([`/home/${id}`])
+  }
 }
