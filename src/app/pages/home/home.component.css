@@ -1,0 +1,17 @@
+.banner__search{
+    display:flex;
+    padding: 1em;
+    justify-content:center;
+    border-bottom-right-radius:6px; 
+    border-bottom-left-radius:6px; 
+    background-color: rgb(207, 84, 84);
+}
+
+.input__search{
+    width: 314px;
+    text-align: center;
+    font-size:16px;
+    border-radius: 8px;
+    border:.5px solid #ddd;
+    height:35px;
+}

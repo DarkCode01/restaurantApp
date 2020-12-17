@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
     this.items=this.ServiceRestaurant.allRestaurant;
-    console.log(this.items)
+    // console.log(this.items)
   }
 
 }
