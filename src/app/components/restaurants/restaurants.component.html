@@ -4,15 +4,22 @@
    
     <article class="container__input ">
  
-        <input type="search" #searchvalue (keyup)="valueSearch=searchvalue.value" class="input__search animate" placeholder="Encuentra tu restaurante favorito">
+        <input type="search" #searchvalue (keyup)="valueSearch=searchvalue.value"
+        class="input__search animate" placeholder="Encuentra tu restaurante favorito">
+
     </article>
 </section>
 
+
+
 <br>
 <br>
 
+
+
+
 <div *ngIf="items.length">
-    <h1 class="animate">Los mejores restaurante en la Republica Dominicana</h1>
+    <h1 class="animate cardsInfo">Los mejores restaurante en la Republica Dominicana</h1>
 
     <section class="container__cards">
         
@@ -21,8 +28,22 @@
                 <img src="../../../assets/images/{{card.image}}" [alt]="card.name">
             </div>
 
-            <div class="container__title__card">
-                <h1>{{ card.name }}</h1>
+            <!-- rating,title -->
+            <div class="container__title__card" >
+                <p class="card__title">{{ card.name }}</p>
+                 <div class="ratings__groups">
+                    <p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <i>{{' ' + card.rating }}</i>
+                    </p>
+                   <p class="card__title">
+                       {{ card.comment }} Opiniones
+                   </p>
+                 </div>   
             </div>
         </article>
 

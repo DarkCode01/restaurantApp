@@ -7,7 +7,7 @@ export const DATA = from([
         "image": "morelia.jpg",
         "price": "2 € - 4 €",
         "detail": "Comidas, Cenas",
-        "rating": "4.5",
+        "rating": "4,5",
         "comment": "9",
         "phone": "+1 809-692-0242",
         "location": "Calle Rafael Augusto Sanchez 9 Esquina General Cambiazo, Plaza Lia, Naco., Santo Domingo República Dominicana"
@@ -18,7 +18,7 @@ export const DATA = from([
         "image": "yao.jpg",
         "price": "8 € - 16 €",
         "detail": "Japonesa, Sushi, Asiática, China",
-        "rating": "4.5",
+        "rating": "4,5",
         "comment": "506",
         "phone":"+1 809-472-2011",
         "location":"Av Rómulo Betancourt 1566 Bella Vista, Santo Domingo República Dominicana"
@@ -29,7 +29,7 @@ export const DATA = from([
         "image": "locanda.jpg",
         "price": "8 € - 16 €",
         "detail": "Opciones vegetarianas, Opciones veganas",
-        "rating": "4.0",
+        "rating": "4,0",
         "comment": "241",
         "phone":"+1 809-508-1696",
         "location":"Av. Lope de Vega Plaza Asturiana, Local 8-A, Naco, Santo Domingo República Dominicana"
@@ -40,7 +40,7 @@ export const DATA = from([
         "image": "caminetto.jpg",
         "price": "5 € - 12 € ",
         "detail": "Opciones vegetarianas, Opciones veganas",
-        "rating": "4.5",
+        "rating": "4,5",
         "comment": "119",
         "phone":"+1 809-732-5219",
         "location":"Roberto Pastoriza #115, Santo Domingo República Dominicana"

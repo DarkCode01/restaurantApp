@@ -33,14 +33,15 @@ import { RestaurantsComponent } from '../components/restaurants/restaurants.comp
         RestaurantService
     ],
     exports: [
-        LoadingComponent,
-        RestaurantsComponent,
         SkeletonComponent,
+        RestaurantsComponent,
+        LoadingComponent,  
         HomeComponent,
         AboutComponent,
         ContactComponent,
         FeedbackComponent,
         StartComponent,
+        RestaurantComponent
       
     ]
 })
