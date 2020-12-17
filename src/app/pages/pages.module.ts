@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { StartComponent } from './start/start.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
+import { RestaurantService } from "../service/restaurant.service";
  
 
 
@@ -22,6 +23,9 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
         FeedbackComponent,
         StartComponent,
         RestaurantComponent
+    ],
+    providers:[
+        RestaurantService
     ],
     exports: [
         HomeComponent,

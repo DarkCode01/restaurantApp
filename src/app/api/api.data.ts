@@ -1,5 +1,6 @@
-{
-    "data": [
+import { from } from "rxjs";
+
+export const DATA = from([
       {
         "id": "1n1rr",
         "name": "PALETAS MORELIA",
@@ -165,14 +166,8 @@
         "phone":"+1 809-565-9236",
         "location":"Av. George Washington #2, Santo Domingo 10205 República Dominicana"
       }
-      
-      
-      
-
-
-    
-
+ 
     
     ]
-  }
 
+)
